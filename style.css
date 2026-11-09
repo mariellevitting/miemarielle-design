@@ -389,6 +389,13 @@ footer {
 .vis { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
 .vis.synlig { opacity: 1; transform: none; }
 
+.logo span { white-space: nowrap; }
+@media (max-width: 400px) {
+  .logo { gap: .45rem; letter-spacing: .05em; }
+  .logo span { font-size: .8rem; }
+  .logo svg { width: 1.25rem; height: 1.25rem; }
+}
+
 /* Mobil */
 @media (max-width: 820px) {
   .case { grid-template-columns: 1fr; }
