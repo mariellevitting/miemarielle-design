@@ -356,15 +356,9 @@ blockquote { font-style: italic; font-size: 1.2rem; line-height: 1.4; border-lef
 .di-tall b { font-weight: 800; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1; color: var(--lilla); letter-spacing: -0.03em; }
 .di-tall span { font-size: .9rem; color: var(--dempet); margin-top: .35rem; }
 .di-lenker { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
-.di-appstore {
-  display: inline-flex; align-items: center; gap: .75rem; text-decoration: none;
-  background: var(--blekk); color: #fff; padding: .55rem 1.2rem .55rem .55rem; border-radius: 16px;
-  transition: transform .15s, background .2s;
-}
-.di-appstore:hover { transform: translateY(-2px); background: #2c1650; }
-.di-appstore img { border-radius: 11px; width: 44px; height: 44px; }
-.di-appstore span { display: flex; flex-direction: column; font-weight: 600; font-size: 1.05rem; line-height: 1.15; }
-.di-appstore small { font-weight: 400; font-size: .72rem; opacity: .75; }
+.di-appstore { display: inline-block; line-height: 0; transition: transform .15s; }
+.di-appstore:hover { transform: translateY(-2px); }
+.di-appstore img { height: 48px; width: auto; }
 
 .di-telefon { margin: 0; }
 .di-ramme {
