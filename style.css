@@ -414,9 +414,13 @@ blockquote { font-style: italic; font-size: 1.2rem; line-height: 1.4; border-lef
   color: #fff; border-radius: 32px; text-align: center;
   padding: clamp(3.5rem, 9vw, 7rem) clamp(1.5rem, 6vw, 5rem); margin: 3rem 0 4rem;
 }
-.kontakt h2 { font-weight: 800; font-size: clamp(2.4rem, 7vw, 5rem); letter-spacing: -0.035em; line-height: .95; margin-bottom: 1.2rem; }
+.kontakt-overtittel { font-size: .82rem !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--lilla-lys) !important; margin-bottom: 1rem !important; }
+.kontakt h2 { font-weight: 700; font-size: clamp(1.9rem, 4vw, 3rem); letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 1.1rem; }
+.kontakt-epost { margin: 1.6rem 0 0 !important; font-size: .9rem !important; }
+.kontakt-epost a { color: #cfc3e8; text-decoration: none; border-bottom: 1px solid rgba(207,195,232,.4); }
+.kontakt-epost a:hover { color: #fff; }
 .kontakt h2::after { content: ""; }
-.kontakt p { color: var(--lilla-lys); margin-bottom: 2.2rem; font-size: 1.1rem; }
+.kontakt p { color: #cfc3e8; margin-bottom: 2rem; font-size: 1.1rem; }
 .kontakt-knapper { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .knapp-hul { background: transparent; border: 1px solid rgba(255,255,255,.35); box-shadow: none; }
 .knapp-hul:hover { background: rgba(255,255,255,.08); box-shadow: none; }
