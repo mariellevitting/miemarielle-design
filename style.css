@@ -54,15 +54,16 @@ nav a:hover::after { right: 0; }
   position: relative; min-height: 100vh; min-height: 100svh;
   display: flex; align-items: center; overflow: hidden;
   padding: 7rem var(--kant) 6rem;
+  color: #fff;
   background:
-    radial-gradient(ellipse 70% 55% at 75% -5%, var(--lavendel-2), transparent 70%),
-    radial-gradient(ellipse 50% 40% at 0% 100%, var(--lavendel), transparent 70%),
-    var(--hvit);
+    radial-gradient(ellipse 65% 60% at 80% -10%, rgba(138,63,252,.55), transparent 70%),
+    radial-gradient(ellipse 55% 45% at -5% 105%, rgba(106,31,216,.45), transparent 70%),
+    linear-gradient(180deg, #1e0e3a 0%, #170a2e 100%);
 }
 .hero::before { /* lysstråler */
   content: ""; position: absolute; inset: -20% -10%;
   background: repeating-linear-gradient(105deg,
-    transparent 0 90px, rgba(138,63,252,.028) 90px 150px, transparent 150px 260px);
+    transparent 0 90px, rgba(201,166,255,.03) 90px 150px, transparent 150px 260px);
   pointer-events: none;
   animation: straaler 18s ease-in-out infinite alternate;
 }
@@ -79,12 +80,12 @@ nav a:hover::after { right: 0; }
 
 .hero h1 {
   font-weight: 900; line-height: .92; letter-spacing: -0.035em;
-  font-size: clamp(2.6rem, 6.4vw, 5.8rem); margin-bottom: 2rem;
+  font-size: clamp(2.2rem, 4.8vw, 4.3rem); margin-bottom: 1.8rem;
 }
 .hero h1 span { display: block; }
 @media (min-width: 821px) { .hero h1 span { white-space: nowrap; } }
 .lilla { color: var(--lilla); }
-.hero .ingress { font-size: clamp(1rem, 1.5vw, 1.18rem); color: var(--dempet); max-width: 660px; margin-bottom: 1rem; }
+.hero .ingress { font-size: clamp(1rem, 1.4vw, 1.12rem); color: #cfc3e8; max-width: 660px; margin-bottom: 1rem; }
 .hero .ingress + .hero-handling { margin-top: 2.2rem; }
 
 .hero-handling { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
@@ -111,6 +112,24 @@ nav a:hover::after { right: 0; }
   animation: dryss 2s ease-in-out infinite;
 }
 @keyframes dryss { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+.hero .lilla { color: var(--lilla-lys); }
+.hero .etikett { color: var(--lilla-lys); }
+.hero .hero-notis.lenke-pil { color: #cfc3e8; }
+.hero .hero-notis.lenke-pil:hover { color: #fff; }
+.hero .hero-notis b { color: var(--lilla-lys); }
+.hero .utforsk { color: #cfc3e8; }
+.hero .utforsk::after { background: linear-gradient(var(--lilla-lys), transparent); }
+.hero :focus-visible { outline-color: #fff; }
+
+/* Topp over mørk hero */
+.topp:not(.rullet) .logo, .topp:not(.rullet) nav a { color: #fff; }
+.topp:not(.rullet) .logo svg { color: var(--lilla-lys); }
+.topp:not(.rullet) nav a { color: rgba(255,255,255,.75); }
+.topp:not(.rullet) nav a:hover { color: #fff; }
+.framdrift.paa-mork { color: #fff; }
+.framdrift.paa-mork .framdrift-spor { background: rgba(255,255,255,.2); }
+.framdrift.paa-mork .framdrift-prikk { background: var(--lilla-lys); }
 
 /* Framdriftsmåler (høyre side) */
 .framdrift {
