@@ -299,6 +299,24 @@ blockquote { font-style: italic; font-size: 1.2rem; line-height: 1.4; border-lef
   .prosess-stripe .steg-maal { grid-column: 1 / -1; }
 }
 
+/* MyTalent-bilde */
+.mytalent-bilde { position: relative; margin: 0; aspect-ratio: 4 / 5; box-shadow: 0 30px 70px rgba(30,14,58,.2); }
+.mytalent-bilde img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.flyt-kort {
+  position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
+  background: rgba(30,14,58,.82); backdrop-filter: blur(10px); color: #fff;
+  border-radius: 16px; padding: 1rem 1.1rem;
+}
+.flyt-kort .flyt-tittel { display: block; margin-bottom: .7rem; }
+.flyt-chips { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; counter-reset: c; }
+.flyt-chips li {
+  counter-increment: c; font-size: .8rem; font-weight: 500; padding: .3rem .7rem; border-radius: 999px;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(201,166,255,.25);
+}
+.flyt-chips li::before { content: counter(c) " "; font-family: var(--mono); color: var(--lilla-lys); font-size: .7rem; }
+.flyt-chips li:last-child { background: var(--lilla); border-color: transparent; }
+.flyt-chips li:last-child::before { color: #fff; }
+
 /* Kompetanse */
 .kompetanse { padding: 2rem 0 5rem; }
 .kompetanse-rutenett { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
@@ -364,6 +382,9 @@ footer {
   .logo span { font-size: .9rem; }
   .danceitude, .skyetec { aspect-ratio: 4 / 4.5; }
   .flytpanel { aspect-ratio: auto; }
+  .mytalent-bilde { aspect-ratio: auto; background: var(--blekk); }
+  .mytalent-bilde img { aspect-ratio: 4 / 5; height: auto; }
+  .flyt-kort { position: static; border-radius: 0; background: var(--blekk); backdrop-filter: none; padding: 1.1rem 1.2rem 1.3rem; }
   .tidslinje li, .erfaring .tidslinje li { grid-template-columns: 1fr; gap: .2rem; }
   .nokkeltall { grid-template-columns: repeat(2, 1fr); }
   .framdrift { display: none; }
