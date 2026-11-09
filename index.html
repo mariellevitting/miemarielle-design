@@ -10,26 +10,46 @@
   <meta property="og:image" content="bilder/danceitude-hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="framdrift" aria-hidden="true">
+  <span class="framdrift-tall">00</span>
+  <span class="framdrift-spor"><span class="framdrift-prikk"></span></span>
+  <span class="framdrift-etikett">Scroll</span>
+</div>
+
 <header class="topp">
-  <a href="#" class="logo">miemarielle<span>design</span></a>
+  <a href="#" class="logo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20.5 7.4v9.2L12 21.5 3.5 16.6V7.4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 15.5V9l4 4 4-4v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    <span>MIEMARIELLE DESIGN</span>
+  </a>
   <nav>
     <a href="#arbeid">Arbeid</a>
     <a href="#om">Om meg</a>
-    <a href="#kontakt" class="knapp-liten">Kontakt</a>
+    <a href="#kontakt">Kontakt</a>
   </nav>
 </header>
 
+<section class="hero">
+  <canvas id="partikler" aria-hidden="true"></canvas>
+  <div class="hero-innhold">
+    <p class="etikett"><span class="strek"></span>Portefølje · Mie Marielle Øverås Vitting</p>
+    <h1><span>Gode løsninger</span><span class="lilla">starter med folk.</span></h1>
+    <p class="ingress">Jeg designer og bygger digitale løsninger som gjør hverdagen enklere – fra workshops med brukerne og første skisse i Adobe XD til apper og nettsider som er i bruk. Master i Applied Computer Science fra Høgskolen i Østfold.</p>
+    <div class="hero-handling">
+      <a class="knapp" href="#arbeid">Se prosjektene <span aria-hidden="true">↓</span></a>
+      <span class="hero-notis"><b>6</b> utvalgte prosjekter</span>
+    </div>
+  </div>
+  <a class="utforsk" href="#arbeid">Utforsk</a>
+</section>
+
 <main>
 
-  <section class="intro">
-    <p class="etikett">Portefølje 2026</p>
-    <h1>Jeg designer og bygger digitale løsninger som gjør <em>hverdagen enklere</em> for folk.</h1>
-    <p class="ingress">Hei, jeg er Mie Marielle. Jeg jobber i skjæringspunktet mellom UX/UI, produktutvikling og markedskommunikasjon – fra første skisse i Adobe XD til apper og nettsider som er i bruk. Jeg har en master i Applied Computer Science fra Høgskolen i Østfold.</p>
+  <section class="intro-ferdigheter">
     <ul class="ferdigheter">
       <li>UX/UI-design</li><li>Participatory design</li><li>Brukerinvolvering</li><li>Produktutvikling</li><li>Webdesign</li><li>Markedsføring</li><li>Innhold &amp; tekst</li><li>KI-assistert utvikling</li>
     </ul>
@@ -175,6 +195,8 @@
   <span>© 2026 Mie Marielle Øverås Vitting</span>
   <span>miemarielle design</span>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
