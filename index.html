@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -41,12 +41,18 @@
 
 <section class="hero">
   <canvas id="partikler" aria-hidden="true"></canvas>
-  <div class="hero-innhold">
+  <div class="hero-rutenett">
+    <div class="hero-innhold">
     <h1><span>Fra brukerbehov til</span><span>digitale produkter</span><span class="lilla">som faktisk brukes.</span></h1>
     <p class="ingress">Interaksjonsdesigner med master i Applied Computer Science, spesialisert i interaksjonsdesign. Leder i dag markedsføring og design i AI-selskapet SkyeTec, og jobber også som Interaction Specialist.</p>
     <p class="ingress">UX-design, teknologi og kunstig intelligens i samspill – fra brukerinnsikt og prototyping til AI-assistert utvikling av egne apper som brukes av ekte mennesker.</p>
     <div class="hero-handling">
       <a class="knapp" href="#arbeid">Se prosjektene <span aria-hidden="true">↓</span></a>
+    </div>
+    </div>
+    <div class="hero-enheter" aria-hidden="true">
+      <div class="telefon telefon-bak"><img src="bilder/mytalent-explore.jpg" alt=""><span class="telefon-navn">MyTalent</span></div>
+      <div class="telefon telefon-foran"><img src="bilder/danceitude-app.jpg" alt=""><span class="telefon-navn">Danceitude</span></div>
     </div>
   </div>
   <a class="utforsk" href="#arbeid">Utforsk</a>
@@ -186,30 +192,40 @@
     </article>
 
     <!-- MyTalent -->
-    <article class="case">
-      <div class="case-tekst">
+    <article class="case-bred mytalent-case">
+      <div class="case-bred-topp">
         <h3>MyTalent – brukeropplevelsen i en digital talentplattform</h3>
         <p class="case-ingress">En talentplattform på mobil og web. Jeg ledet designteamet fram mot lansering og i videreutviklingen (2025–2026).</p>
+      </div>
+      <div class="mytalent-rutenett">
+        <figure class="mt-flis mt-mockup">
+          <img class="mt-logo" src="bilder/mytalent-logo.png" alt="MyTalent – Build your audience. Get discovered. Earn rewards." loading="lazy">
+          <img class="mt-enheter" src="bilder/mytalent-mockup.jpg" alt="MyTalent på PC og mobil: utforsk-siden med kategorier, trending talenter og grupper" loading="lazy">
+        </figure>
+        <figure class="mt-flis mt-explore">
+          <img src="bilder/mytalent-explore.jpg" alt="Skjermbilde av MyTalent på mobil: «Get discovered for your talent» med søk, faner og knapp for å opprette konto" loading="lazy">
+        </figure>
+        <figure class="mt-flis mt-hand">
+          <img src="bilder/mytalent-hand.webp" alt="En hånd holder en mobil med MyTalent-feeden åpen" loading="lazy">
+        </figure>
+        <figure class="mt-flis mt-foto">
+          <img src="bilder/mytalent.jpg" alt="Mie Marielle sammen med en profil under innholdsproduksjon for MyTalent" loading="lazy">
+        </figure>
+      </div>
+      <div class="case-kolonner">
         <dl>
           <dt>Interaksjon</dt>
           <dd>Som Interaction Specialist jobbet jeg med brukerreiser, informasjonsarkitektur, navigasjon, onboarding og microcopy – designet og prototypet i Figma.</dd>
           <dt>Testing</dt>
           <dd>Som ansvarlig for brukertesting planla og gjennomførte jeg testene, analyserte tilbakemeldingene og gjorde funnene om til konkrete forbedringsforslag.</dd>
+        </dl>
+        <dl>
           <dt>Ledelse</dt>
           <dd>Som Delivery Manager ledet jeg designteamet, fordelte oppgaver, fulgte opp leveranser og var bindeleddet mellom designerne og ledelsen.</dd>
           <dt>Hva jeg lærte</dt>
           <dd>Små detaljer – en knappetekst, et tomt skjermbilde, et steg i onboardingen – avgjør ofte om folk kommer i gang. Og funn fra brukertester får mest effekt når de deles tidlig og konkret med hele teamet.</dd>
         </dl>
       </div>
-      <figure class="case-bilde mytalent-bilde">
-        <img src="bilder/mytalent.jpg" alt="Mie Marielle sammen med en profil under innholdsproduksjon for MyTalent" loading="lazy">
-        <figcaption class="flyt-kort">
-          <span class="flyt-tittel">Designsløyfen · mobil og web</span>
-          <ol class="flyt-chips">
-            <li>Brukerinnsikt</li><li>Brukerreise &amp; IA</li><li>Onboarding &amp; microcopy</li><li>Prototype i Figma</li><li>Brukertest</li><li>Forbedringer</li>
-          </ol>
-        </figcaption>
-      </figure>
     </article>
 
     <!-- SkyeTec påmelding -->
@@ -309,10 +325,15 @@
   <section id="om" class="om">
     <h2 class="seksjon-tittel">Om meg</h2>
     <div class="om-tekst">
-      <p>Jeg liker problemer som starter med «det er bare sånn vi gjør det». Ofte ligger løsningen i å forstå folkene som faktisk bruker systemet – og så gjøre det enkleste som virker.</p>
-      <p>Jeg er mest opptatt av samspillet mellom mennesker og teknologi: hvordan en flyt føles, hvor brukeren stopper opp, og hvordan små detaljer i navigasjon og tekst gjør noe enklere. I MyTalent ledet jeg designteamet og var ansvarlig for brukertesting.</p>
-      <p>Siden 2023 har jeg ledet marked og design i SkyeTec, med rapportering til kommersiell direktør. Der kombinerer jeg strategi og kommunikasjon med interaksjonsdesign – fra nettsidens struktur og navigasjon til visuell profil. Jeg bruker KI-verktøy som Claude Code aktivt for å gå raskt fra prototype til fungerende løsning.</p>
-      <p>Utenfor jobb er jeg trener i dansemiljøet – som er grunnen til at Danceitude finnes.</p>
+      <div class="om-kolonne">
+        <p>Jeg er en nysgjerrig og kreativ interaksjonsdesigner som liker å forstå hvorfor ting fungerer som de gjør – og hvordan de kan gjøres bedre. Jeg trives aller best når jeg får kombinere mennesker, design og teknologi for å løse faktiske problemer.</p>
+        <p>Jeg har en mastergrad i Applied Computer Science med spesialisering i interaksjonsdesign fra Høgskolen i Østfold. Gjennom studier og prosjekter har jeg jobbet med alt fra brukerintervjuer og brukertesting til prototyping, UX-evaluering og utvikling av digitale løsninger. Jeg liker å involvere brukerne tidlig, utfordre etablerte måter å gjøre ting på og finne løsninger som både er intuitive og nyttige.</p>
+      </div>
+      <div class="om-kolonne">
+        <p>I dag leder jeg markedsføring og design i AI-selskapet SkyeTec, hvor jeg også jobber som Interaction Specialist. Her får jeg kombinere strategisk og kreativt arbeid med interaksjonsdesign, teknologi og kunstig intelligens. Jeg bruker AI aktivt som en del av arbeidsprosessen, både til å utforske ideer, designe og utvikle fungerende løsninger.</p>
+        <p>Jeg er også glad i å skape ting på egen hånd. Et godt eksempel er Danceitude, en app jeg har designet og utviklet fra bunnen av for å gjøre hverdagen enklere for danseklubber, trenere og dansere. Det som startet med et problem jeg selv opplevde i dansemiljøet, har blitt et produkt med over 100 brukere. For meg er det noe av det morsomste med design – å se en idé bli til noe mennesker faktisk får nytte av.</p>
+        <p>Utenfor jobb finner du meg gjerne i dansesalen, hvor jeg også er trener. Dans har vært en stor del av livet mitt og har lært meg mye om kreativitet, samarbeid og det å forstå ulike mennesker. Den erfaringen tar jeg med meg inn i måten jeg jobber som designer på.</p>
+      </div>
     </div>
   </section>
 
@@ -362,7 +383,7 @@
   <span>miemarielle design</span>
 </footer>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 
 </body>
 </html>
