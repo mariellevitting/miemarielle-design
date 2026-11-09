@@ -256,6 +256,14 @@ blockquote { font-style: italic; font-size: 1.2rem; line-height: 1.4; border-lef
 .hero-notis.lenke-pil { color: var(--dempet); border: none; }
 .hero-notis.lenke-pil:hover { color: var(--blekk); }
 
+.nokkeltall { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; margin: -0.5rem 0 2rem; }
+.nokkeltall li { background: var(--lavendel); border-radius: 14px; padding: .8rem .9rem; display: flex; flex-direction: column; }
+.nokkeltall b { font-weight: 900; font-size: clamp(1.6rem, 2.6vw, 2.2rem); line-height: 1; color: var(--lilla); letter-spacing: -0.03em; }
+.nokkeltall span { font-size: .78rem; color: var(--dempet); margin-top: .3rem; line-height: 1.25; }
+.erfaring { padding-top: 3rem; }
+.erfaring .tidslinje li { grid-template-columns: 9rem 1fr; }
+.erfaring .tidslinje p { max-width: 720px; }
+
 /* Kompetanse */
 .kompetanse { padding: 2rem 0 5rem; }
 .kompetanse-rutenett { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
@@ -321,7 +329,8 @@ footer {
   .logo span { font-size: .9rem; }
   .danceitude, .skyetec { aspect-ratio: 4 / 4.5; }
   .flytpanel { aspect-ratio: auto; }
-  .tidslinje li { grid-template-columns: 1fr; gap: .2rem; }
+  .tidslinje li, .erfaring .tidslinje li { grid-template-columns: 1fr; gap: .2rem; }
+  .nokkeltall { grid-template-columns: repeat(2, 1fr); }
   .framdrift { display: none; }
   footer { flex-direction: column; gap: .3rem; }
 }

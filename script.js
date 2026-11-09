@@ -103,7 +103,7 @@
   vedRulling();
 
   /* ---------- Inn-animasjoner ---------- */
-  const elementer = document.querySelectorAll(".case, .case-bred, .kort, .seksjon-tittel, .om-tekst, .tidslinje li, .kompetanse-kort, .kontakt");
+  const elementer = document.querySelectorAll(".case, .case-bred, .kort, .seksjon-tittel, .om-tekst, .tidslinje li, .nokkeltall, .kompetanse-kort, .kontakt");
   if ("IntersectionObserver" in window && !roligBevegelse) {
     const obs = new IntersectionObserver((oppf) => {
       oppf.forEach((o) => { if (o.isIntersecting) { o.target.classList.add("synlig"); obs.unobserve(o.target); } });
