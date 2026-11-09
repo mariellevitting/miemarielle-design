@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -70,85 +70,142 @@
     <h2 class="seksjon-tittel">Utvalgt arbeid</h2>
 
     <!-- Danceitude -->
-    <article class="case-bred danceitude-case">
-      <div class="case-bred-topp">
-        <h3>Danceitude – fra Google Docs til App Store</h3>
-        <p class="case-ingress">En bookingapp for privattimer i danseklubber. Jeg har gjort alt selv – fra å kartlegge behovene sammen med dansere, foreldre og trenere, til design, utvikling, lansering og videreutvikling.</p>
-      </div>
-      <ul class="nokkeltall">
-        <li><b>200</b><span>brukere</span></li>
-        <li><b>2</b><span>danseklubber</span></li>
-        <li><b>3</b><span>workshops med brukerne</span></li>
-        <li><b>1</b><span>person bak alt</span></li>
-      </ul>
-      <ol class="prosess-stripe">
-        <li>
-          <span class="steg-nr">01 · Problem</span>
-          <h5>Booking i Google Docs</h5>
-          <p>Ledige timer i et delt dokument, avtaler i meldinger på tvers av apper. Dobbeltbookinger og lite oversikt.</p>
-        </li>
-        <li>
-          <span class="steg-nr">02 · Workshop 1</span>
-          <h5>Kartlegge behov</h5>
-          <p>Dansere, foreldre og trenere i samme rom. De delte erfaringer og skisserte selv hvordan en bedre løsning skulle fungere.</p>
-        </li>
-        <li class="med-bilde">
-          <span class="steg-nr">03 · Prototype</span>
-          <h5>Flyter i Adobe XD</h5>
-          <p>23 skjermer fordelt på fire flyter: innlogging, bestilling, administrasjon av tider og avbestilling.</p>
-          <div class="mini-skjermer" aria-hidden="true">
-            <img src="bilder/xd-12_Bestill_privattime.png" alt="" loading="lazy">
-            <img src="bilder/xd-13_Kalender.png" alt="" loading="lazy">
-            <img src="bilder/xd-19_Takk.png" alt="" loading="lazy">
-          </div>
-        </li>
-        <li>
-          <span class="steg-nr">04 · Workshop 2</span>
-          <h5>Teste prototypen</h5>
-          <p>Brukerne testet en tidlig versjon. Innsikten: foreldre måtte bli en egen rolle – det er ofte de som booker. Noen funksjoner ble tatt ut.</p>
-        </li>
-        <li>
-          <span class="steg-nr">05 · Utvikling</span>
-          <h5>Bygget med KI</h5>
-          <p>Jeg utviklet appen selv med KI-verktøy: tre roller, statuser, push-varsler, poeng, mål og konkurranser.</p>
-        </li>
-        <li>
-          <span class="steg-nr">06 · Workshop 3</span>
-          <h5>Teste ferdig produkt</h5>
-          <p>Hele løsningen ble testet med brukerne og bekreftet at den løste problemene vi startet med.</p>
-        </li>
-        <li class="steg-maal">
-          <span class="steg-nr">07 · Lansering</span>
-          <h5>App Store og 200 brukere</h5>
-          <p>I bruk i Evolution Danseklubb og Trondheim Danseklubb. Jeg videreutvikler appen basert på tilbakemeldinger.</p>
-        </li>
-      </ol>
+    <article class="case-bred di-case">
 
-      <div class="case danceitude-detaljer">
-        <div class="case-bilde danceitude">
-          <img src="bilder/danceitude-app.jpg" alt="Skjermbilde av Danceitude-appen: trenerens oversikt med neste konkurranse og kommende privattimer" loading="lazy">
+      <!-- 1. Introduksjon -->
+      <div class="di-intro">
+        <div class="di-intro-tekst">
+          <h3>Danceitude – fra Google Docs til App Store</h3>
+          <p class="case-ingress">En bookingapp for privattimer i danseklubber. Jeg har designet og utviklet hele appen selv – fra de første workshopene med brukerne til lansering i App Store.</p>
+          <ul class="di-tall">
+            <li><b>200</b><span>brukere</span></li>
+            <li><b>3</b><span>danseklubber</span></li>
+            <li><b>3</b><span>brukerworkshops</span></li>
+          </ul>
+          <div class="di-lenker">
+            <a class="di-appstore" href="https://apps.apple.com/no/app/danceitude/id6800676215" target="_blank" rel="noopener">
+              <img src="bilder/danceitude/app-ikon.png" alt="" width="44" height="44">
+              <span><small>Last ned i</small>App Store</span>
+            </a>
+            <a class="lenke-pil" href="https://www.danceitude.no" target="_blank" rel="noopener">danceitude.no <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="case-tekst">
-          <dl>
-            <dt>Interaksjon</dt>
-            <dd>Hver rolle – danser, forelder og trener – får sin egen startside og sine egne flyter. Tydelige statuser (ledig, opptatt), varsler når noe endrer seg, avbestilling direkte i appen og påminnelse om å bekrefte gjennomførte timer.</dd>
-            <dt>Samarbeid</dt>
-            <dd>Utviklet i tett dialog med trenere, dansere og foreldre i klubbene. Jeg delte prototyper og tidlige versjoner underveis, og lot tilbakemeldingene avgjøre hva som ble bygget.</dd>
-            <dt>Mitt bidrag</dt>
-            <dd>Alt. Jeg planla og ledet workshopene, analyserte innsikten, laget informasjonsarkitektur, interaksjonsdesign og visuell profil, testet med brukerne, utviklet appen, publiserte den i App Store og laget nettsiden.</dd>
-            <dt>Hva jeg lærte</dt>
-            <dd>Å teste tidlig med alle brukergruppene sparte meg for å bygge feil ting. Uten workshop 2 hadde foreldrene – de som ofte booker og betaler – ikke hatt en plass i appen.</dd>
-          </dl>
+          <figure class="di-telefon di-stor">
+            <div class="di-ramme"><img src="bilder/danceitude/trener-forside.jpg" alt="Trenerens forside i Danceitude: nedtelling til neste konkurranse, knapp for å legge ut tid og ledige timer"></div>
+          </figure>
+      </div>
+
+      <!-- 2. Problemet -->
+      <section class="di-del di-problem">
+        <h4>Problemet</h4>
+        <div class="di-to-kol">
+          <p>Ledige privattimer lå i et delt Google Docs-dokument, og avtaler ble gjort i meldinger på tvers av apper. Ingen hadde full oversikt, og det ble dobbeltbookinger. Trenerne brukte tid på administrasjon i stedet for trening.</p>
           <figure class="sitat">
             <blockquote>«Før måtte vi lete i Google Docs og sende meldinger for å finne ledige timer. Nå er alt i appen – det er bare å booke!»</blockquote>
             <figcaption>Forelder, Evolution Danseklubb</figcaption>
           </figure>
-          <div class="case-lenker">
-            <a class="knapp knapp-liten-lilla" href="https://www.danceitude.no" target="_blank" rel="noopener">Besøk danceitude.no <span aria-hidden="true">↗</span></a>
-            <a class="lenke-pil" href="https://apps.apple.com/no/app/danceitude/id6800676215" target="_blank" rel="noopener">Se appen i App Store <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <!-- 3. Brukerinnsikt -->
+      <section class="di-del">
+        <h4>Brukerinnsikt</h4>
+        <div class="di-to-kol di-innsikt">
+          <div>
+            <ol class="di-steg">
+              <li><b>Workshop 1 · Kartlegging</b> Dansere, foreldre og trenere i samme rom. De delte erfaringer og skisserte selv hvordan en bedre løsning skulle fungere.</li>
+              <li><b>Workshop 2 · Prototypetesting</b> En tidlig prototype ble testet med ekte brukere. Tilbakemeldingene avgjorde hvilke funksjoner som trengtes – og hvilke som ikke gjorde det.</li>
+              <li><b>Workshop 3 · Ferdig produkt</b> Hele løsningen ble testet for å bekrefte at den løste problemene vi startet med.</li>
+            </ol>
+            <p class="di-funn"><b>Viktigste funn:</b> Prototypen hadde bare dansere og administratorer – men det er ofte foreldrene som booker for barna sine. Derfor fikk foreldre en egen brukerrolle i appen.</p>
+          </div>
+          <figure class="di-skjerm">
+            <img src="bilder/danceitude/velg-rolle.jpg" alt="Registrering i Danceitude: «Hvem er du?» med valgene Danser, Forelder og Trener" loading="lazy">
+            <figcaption>Resultatet: tre roller ved registrering – danser, forelder og trener.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 4. Designprosessen -->
+      <section class="di-del">
+        <h4>Designprosessen</h4>
+        <p class="di-lead">Fra prototype i Adobe XD til ferdig app – formet av tilbakemeldingene fra workshopene.</p>
+        <div class="di-for-etter">
+          <figure class="di-xd">
+            <div class="di-xd-rad">
+              <img src="bilder/xd-12_Bestill_privattime.png" alt="Prototype: bestill privattime – velg instruktør" loading="lazy">
+              <img src="bilder/xd-13_Kalender.png" alt="Prototype: velg dato i kalender" loading="lazy">
+              <img src="bilder/xd-16_Velg_dans.png" alt="Prototype: velg dansestil" loading="lazy">
+              <img src="bilder/xd-19_Takk.png" alt="Prototype: bekreftelse på bestilling" loading="lazy">
+            </div>
+            <figcaption><b>Prototype i Adobe XD</b> 23 skjermer i fire flyter: innlogging, bestilling, administrasjon av tider og avbestilling.</figcaption>
+          </figure>
+          <span class="di-pil" aria-hidden="true">→</span>
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude/booking-tider.jpg" alt="Ferdig app: ukevisning med ledige og opptatte tider og knappen Gå videre" loading="lazy"></div>
+            <figcaption><b>Ferdig app</b> Alle tider for uken på én skjerm – ledige og opptatte tider er tydelig skilt.</figcaption>
+          </figure>
+        </div>
+        <ul class="di-beslutninger">
+          <li><b>Egne flater per rolle.</b> Dansere, foreldre og trenere ser bare det som er relevant for dem.</li>
+          <li><b>Tydelige statuser.</b> Ledige og opptatte tider er lett å skille, så dobbeltbookinger unngås.</li>
+          <li><b>Mindre administrasjon.</b> Trenere legger ut tider selv, og danserne booker direkte.</li>
+        </ul>
+      </section>
+
+      <!-- 5. Løsningen -->
+      <section class="di-del">
+        <h4>Løsningen</h4>
+        <p class="di-lead">Én app med egne flater for dansere, foreldre og trenere: booking og avbestilling, push-varsler når timer legges ut eller bookes, og oppfølging av utviklingen over sesongen.</p>
+        <div class="di-galleri">
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude/danser-forside.jpg" alt="Danserens forside med neste konkurranse og knapp for å booke time" loading="lazy"></div>
+            <figcaption>Danser: neste konkurranse og egne timer</figcaption>
+          </figure>
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude/legg-ut-tider.jpg" alt="Treneren legger ut ledige tider i en kalender" loading="lazy"></div>
+            <figcaption>Trener: legg ut ledige tider</figcaption>
+          </figure>
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude-app.jpg" alt="Trenerens oversikt over bookede timer med mulighet til å avbestille" loading="lazy"></div>
+            <figcaption>Trener: bookinger og avbestilling</figcaption>
+          </figure>
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude/poeng-og-nivaer.jpg" alt="Poeng og nivåer i freestyle og slow" loading="lazy"></div>
+            <figcaption>Poeng og nivåer</figcaption>
+          </figure>
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude/sesongmal.jpg" alt="Mine sesongmål, med valg om å dele målene med treneren" loading="lazy"></div>
+            <figcaption>Sesongmål som kan deles med trener</figcaption>
+          </figure>
+          <figure class="di-telefon ">
+            <div class="di-ramme"><img src="bilder/danceitude/konkurranseresultater.jpg" alt="Oversikt over konkurranseresultater med plasseringer" loading="lazy"></div>
+            <figcaption>Konkurranseresultater</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 6. Utvikling med AI -->
+      <section class="di-del di-to-kol di-ai">
+        <h4>Utvikling med AI</h4>
+        <p>Jeg utviklet appen selv, fra prototype til fungerende produkt, med AI-verktøy som Claude Code. Det gjorde det mulig å gå raskt fra innsikt til noe brukerne kunne teste, og å forbedre appen etter tilbakemeldingene. Appen finnes som iOS-app i App Store og i nettleseren.</p>
+      </section>
+
+      <!-- 7. Resultat og læring -->
+      <section class="di-del di-resultat">
+        <h4>Resultat og læring</h4>
+        <div class="di-to-kol">
+          <ul class="di-resultatliste">
+            <li><b>Lansert</b> i App Store og i nettleseren</li>
+            <li><b>3</b> danseklubber bruker appen</li>
+            <li><b>200</b> brukere</li>
+          </ul>
+          <div>
+            <p>Å teste tidlig med alle brukergruppene sparte meg for å bygge feil ting. Uten workshop 2 hadde foreldrene – de som ofte booker og betaler – ikke hatt en plass i appen.</p>
+            <p>Appen videreutvikles fortsatt sammen med dansere, foreldre og trenere. De beste løsningene blir ikke laget for brukerne, men sammen med dem.</p>
           </div>
         </div>
-      </div>
+      </section>
     </article>
 
     <!-- Masteroppgave -->
