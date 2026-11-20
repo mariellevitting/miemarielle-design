@@ -292,6 +292,23 @@ footer {
 .skisse-prototype figcaption { font-size: .86rem; color: var(--dempet); margin-top: .7rem; }
 .skisse-prototype figcaption b { color: var(--tekst); font-weight: 500; }
 
+/* Masteroppgave: ekstra */
+.hiof-logo { height: 34px; width: auto; margin-bottom: 1.4rem; }
+.hiof-ikon { height: 18px; width: auto; display: inline-block; vertical-align: middle; opacity: .85; }
+.eu-tittel { display: flex; align-items: center; justify-content: space-between; }
+.pdf-info { font-size: .84rem; color: var(--svak); }
+.di-metode { font-size: .9rem; color: var(--svak); margin-top: -1rem; }
+.funn-liste { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 3vw, 2rem); }
+.funn-liste > div { padding-top: 1rem; border-top: 2px solid var(--lilla-lys); }
+.funn-liste h5 { font-size: 1.02rem; margin-bottom: .45rem; }
+.funn-liste p { font-size: .93rem; color: var(--dempet); }
+.beslutninger { width: 100%; border-collapse: collapse; margin-top: 2rem; font-size: .94rem; }
+.beslutninger th { text-align: left; font-weight: 500; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--lilla); padding: 0 1rem .7rem 0; }
+.beslutninger td { padding: .9rem 1rem .9rem 0; border-top: 1px solid var(--linje); vertical-align: top; color: var(--dempet); }
+.beslutninger td:first-child { color: var(--tekst); font-weight: 500; width: 32%; }
+.retningslinjer { margin: 1.5rem 0 0 1.1rem; display: grid; gap: .35rem; font-size: .94rem; color: var(--dempet); }
+.retningslinjer li::marker { color: var(--lilla); font-weight: 600; }
+
 /* MyTalent */
 .mt-intro { background: var(--blaa-bg); border-radius: 24px; padding: 1.75rem 1.75rem 0; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; overflow: hidden; }
 .mt-intro .mt-logo { width: 170px; height: auto; align-self: flex-start; }
@@ -331,7 +348,8 @@ footer {
   .di-for-etter, .skisse-prototype { grid-template-columns: 1fr; }
   .di-pil { transform: rotate(90deg); justify-self: center; }
   .di-for-etter .di-telefon { justify-self: center; }
-  .di-beslutninger, .di-roller { grid-template-columns: 1fr; }
+  .di-beslutninger, .di-roller, .funn-liste { grid-template-columns: 1fr; }
+  .beslutninger td:first-child { width: 40%; }
   .di-stack li { grid-template-columns: 1fr; gap: 0; }
   .di-galleri { grid-auto-columns: 62vw; }
   .workshop-galleri { grid-template-columns: 1fr; }
