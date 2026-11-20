@@ -6,7 +6,7 @@
   const lerret = document.getElementById("partikler");
   if (lerret) {
   const ctx = lerret.getContext("2d");
-  const farger = ["#c9a6ff", "#a66bff", "#e9ddff", "#8a3ffc"];
+  const farger = ["#7b61ff", "#a493ff", "#c7bcff", "#9a86ff"];
 
   // Enkle strekikoner tegnet på et 24 × 24-rutenett.
   const mobil = "M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z M10 19h4";
@@ -51,7 +51,7 @@
       spinn: (Math.random() - 0.5) * 0.004,
       fase: Math.random() * Math.PI * 2,
       farge: farger[(Math.random() * farger.length) | 0],
-      alfa: 0.2 + dybde * 0.5,
+      alfa: (0.18 + dybde * 0.32) * (b < 700 ? 0.55 : 1),
       sti: stier[(Math.random() * stier.length) | 0],
       dx: 0, dy: 0,
     };
