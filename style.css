@@ -156,6 +156,13 @@ section { scroll-margin-top: 5rem; }
 .prosjekt h3 { font-size: 1.25rem; margin-bottom: .35rem; }
 .prosjekt p { color: var(--dempet); font-size: .95rem; margin-bottom: .7rem; }
 .prosjekt-tags { font-size: .78rem; color: var(--svak); margin-bottom: .9rem; }
+.prosjekt { position: relative; }
+.prosjekt-dekke { position: absolute; inset: 0; z-index: 1; border-radius: var(--radius); }
+.prosjekt:has(.prosjekt-dekke):hover .prosjekt-bilde { transform: translateY(-5px); box-shadow: var(--skygge); }
+.prosjekt-lenker { margin-top: auto; display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; }
+.prosjekt-lenker .prosjekt-lenke { margin-top: 0; }
+.prosjekt-pdf { position: relative; z-index: 2; font-size: .95rem; font-weight: 500; color: var(--dempet); text-decoration: none; border-bottom: 1px solid var(--lilla-lys); }
+.prosjekt-pdf:hover { color: var(--lilla-mork); }
 .prosjekt-lenke { margin-top: auto; font-weight: 500; color: var(--lilla-mork); font-size: .95rem; }
 
 .andre-tittel { font-size: 1.05rem; font-weight: 600; margin: clamp(3rem, 6vw, 4.5rem) 0 1.1rem; }
