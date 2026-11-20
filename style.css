@@ -63,7 +63,8 @@ nav a:hover { color: var(--tekst); }
   font-weight: 600; font-size: clamp(2.2rem, 4.2vw, 3.8rem); line-height: 1.08; letter-spacing: -0.035em;
   margin-bottom: 1.6rem;
 }
-.hero h1 span { display: block; }
+.hero h1 { text-wrap: balance; }
+.hero-hei { font-size: clamp(1.05rem, 1.5vw, 1.25rem); font-weight: 500; color: var(--lilla-mork); margin-bottom: 1rem; }
 .lilla { color: var(--lilla); }
 .hero .ingress { font-size: clamp(1rem, 1.3vw, 1.08rem); color: var(--dempet); max-width: 600px; margin-bottom: 1rem; }
 .hero-handling { margin-top: 2rem; display: flex; gap: 1rem; align-items: center; }
