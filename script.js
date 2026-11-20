@@ -1,9 +1,10 @@
-// Svevende UX-ikoner i toppen, framdriftsmåler og inn-animasjoner.
+// Svevende UX-ikoner i toppen, toppmeny og inn-animasjoner.
 (() => {
   const roligBevegelse = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- Svevende ikoner ---------- */
   const lerret = document.getElementById("partikler");
+  if (lerret) {
   const ctx = lerret.getContext("2d");
   const farger = ["#c9a6ff", "#a66bff", "#e9ddff", "#8a3ffc"];
 
@@ -107,26 +108,19 @@
   lerret.parentElement.addEventListener("pointerleave", () => { mus.x = mus.y = -9999; });
   tilpass();
   requestAnimationFrame(steg);
+  }
 
-  /* ---------- Topp og framdriftsmåler ---------- */
+  /* ---------- Toppmeny ---------- */
   const topp = document.querySelector(".topp");
-  const tall = document.querySelector(".framdrift-tall");
-  const prikk = document.querySelector(".framdrift-prikk");
+  const helt = document.querySelector(".hero");
   function vedRulling() {
-    const maks = document.documentElement.scrollHeight - innerHeight;
-    const andel = maks > 0 ? Math.min(1, scrollY / maks) : 0;
-    tall.textContent = String(Math.round(andel * 100)).padStart(2, "0") + " %";
-    prikk.style.top = andel * 100 + "%";
-    const helt = document.querySelector(".hero");
-    const grense = helt.offsetHeight - 70;
-    topp.classList.toggle("rullet", scrollY > grense);
-    document.querySelector(".framdrift").classList.toggle("paa-mork", scrollY < helt.offsetHeight - innerHeight / 2);
+    topp.classList.toggle("rullet", !helt || scrollY > helt.offsetHeight - 70);
   }
   addEventListener("scroll", vedRulling, { passive: true });
   vedRulling();
 
   /* ---------- Inn-animasjoner ---------- */
-  const elementer = document.querySelectorAll(".case, .case-bred:not(.di-case), .di-intro, .di-del, .kort, .seksjon-tittel, .om-kolonne, .tidslinje li, .nokkeltall, .kompetanse-kort, .kontakt");
+  const elementer = document.querySelectorAll(".di-del, .prosjekt, .andre-prosjekter, .seksjon-tittel, .om-kolonne, .kompetanse-liste li, .eu-kolonner > div, .neste-case, .kontakt");
   if ("IntersectionObserver" in window && !roligBevegelse) {
     const obs = new IntersectionObserver((oppf) => {
       oppf.forEach((o) => { if (o.isIntersecting) { o.target.classList.add("synlig"); obs.unobserve(o.target); } });

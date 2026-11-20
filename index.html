@@ -13,17 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
 
 <a class="hopp" href="#arbeid">Hopp til prosjektene</a>
-
-<div class="framdrift" aria-hidden="true">
-  <span class="framdrift-tall">00</span>
-  <span class="framdrift-spor"><span class="framdrift-prikk"></span></span>
-  <span class="framdrift-etikett">Scroll</span>
-</div>
 
 <header class="topp">
   <a href="#" class="logo">
@@ -32,7 +26,6 @@
   </a>
   <nav>
     <a href="#arbeid">Arbeid</a>
-    <a href="#kompetanse">Kompetanse</a>
     <a href="#om">Om meg</a>
     <a href="#erfaring">Erfaring</a>
     <a href="#kontakt">Kontakt</a>
@@ -60,327 +53,63 @@
 
 <main id="innhold">
 
-  <section class="intro-ferdigheter">
-    <ul class="ferdigheter">
-      <li>Interaksjonsdesign</li><li>UX-design</li><li>Brukerinnsikt</li><li>Brukertesting</li><li>Informasjonsarkitektur</li><li>Brukerreiser</li><li>Onboarding &amp; microcopy</li><li>Prototyping i Figma og Adobe XD</li><li>Participatory design</li><li>Designledelse</li><li>Merkevare &amp; visuell profil</li><li>KI-assistert utvikling</li>
-    </ul>
-  </section>
-
   <section id="arbeid" class="arbeid">
     <h2 class="seksjon-tittel">Utvalgt arbeid</h2>
+    <div class="prosjekter">
+      <a class="prosjekt" href="danceitude.html">
+        <div class="prosjekt-bilde pb-danceitude"><img src="bilder/danceitude/trener-forside.jpg" alt="" loading="lazy"></div>
+        <h3>Danceitude</h3>
+        <p>Bookingapp for danseklubber – designet og utviklet alene, fra workshops med brukerne til App Store. 200 brukere.</p>
+        <span class="prosjekt-tags">Eget produkt · Mobilapp · Brukertesting</span>
+        <span class="prosjekt-lenke">Se casen <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="prosjekt" href="masteroppgave.html">
+        <div class="prosjekt-bilde pb-master"><img src="bilder/master-skisse-til-prototype.jpg" alt="" loading="lazy"></div>
+        <h3>Digital leksemodul</h3>
+        <p>Masteroppgave: participatory design sammen med barn, foreldre og lærere. Karakter A.</p>
+        <span class="prosjekt-tags">Masteroppgave · Participatory design</span>
+        <span class="prosjekt-lenke">Se casen <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="prosjekt" href="mytalent.html">
+        <div class="prosjekt-bilde pb-mytalent"><img src="bilder/mytalent-mockup.jpg" alt="" loading="lazy"></div>
+        <h3>MyTalent</h3>
+        <p>Brukeropplevelse, brukertesting og designledelse for en talentplattform på mobil og web.</p>
+        <span class="prosjekt-tags">Designledelse · Interaksjonsdesign</span>
+        <span class="prosjekt-lenke">Se casen <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
 
-    <!-- Danceitude -->
-    <article class="case-bred di-case">
-
-      <!-- 1. Introduksjon -->
-      <div class="di-intro">
-        <div class="di-intro-tekst">
-          <h3>Danceitude – fra Google Docs til App Store</h3>
-          <p class="case-ingress">En bookingapp for privattimer i danseklubber. Jeg har designet og utviklet hele appen selv – fra de første workshopene med brukerne til lansering i App Store.</p>
-          <ul class="di-tall">
-            <li><b>200</b><span>brukere</span></li>
-            <li><b>3</b><span>danseklubber</span></li>
-            <li><b>3</b><span>brukerworkshops</span></li>
-          </ul>
-          <div class="di-lenker">
-            <a class="di-appstore" href="https://apps.apple.com/no/app/danceitude/id6800676215" target="_blank" rel="noopener">
-              <img src="bilder/app-store-merke.svg" alt="Last ned Danceitude fra App Store" width="144" height="48">
-            </a>
-            <a class="lenke-pil" href="https://www.danceitude.no" target="_blank" rel="noopener">danceitude.no <span aria-hidden="true">↗</span></a>
-          </div>
+    <h3 class="andre-tittel">Andre prosjekter</h3>
+    <div class="andre-prosjekter">
+      <div class="annet">
+        <img src="bilder/skyetec-pamelding.jpg" alt="Påmeldingsside for SkyeTecs frokostseminar" loading="lazy">
+        <div>
+          <h4>SkyeTec – påmelding til seminar</h4>
+          <p>Kort skjema med bekreftelse på siden og kalenderinvitasjon på e-post, og enkel deltakerliste for arrangøren.</p>
         </div>
-          <figure class="di-telefon di-stor">
-            <div class="di-ramme"><img src="bilder/danceitude/trener-forside.jpg" alt="Trenerens forside i Danceitude: nedtelling til neste konkurranse, knapp for å legge ut tid og ledige timer"></div>
-          </figure>
       </div>
-
-      <!-- 2. Problemet -->
-      <section class="di-del di-problem">
-        <h4>Problemet</h4>
-        <div class="di-to-kol">
-          <p>Ledige privattimer lå i et delt Google Docs-dokument, og avtaler ble gjort i meldinger på tvers av apper. Ingen hadde full oversikt, og det ble dobbeltbookinger. Trenerne brukte tid på administrasjon i stedet for trening.</p>
-          <figure class="sitat">
-            <blockquote>«Før måtte vi lete i Google Docs og sende meldinger for å finne ledige timer. Nå er alt i appen – det er bare å booke!»</blockquote>
-            <figcaption>Forelder, Evolution Danseklubb</figcaption>
-          </figure>
+      <div class="annet">
+        <div class="annet-status" aria-hidden="true"><span>Idé</span><span>Klar</span><span>Godkjent</span><span>Postet</span></div>
+        <div>
+          <h4>Delt planleggingskalender</h4>
+          <p>Internt verktøy for SkyeTec, bygget med Claude Code: tydelig statusflyt og rettigheter etter rolle.</p>
         </div>
-      </section>
-
-      <!-- 3. Brukerinnsikt -->
-      <section class="di-del">
-        <h4>Brukerinnsikt</h4>
-        <div class="di-to-kol di-innsikt">
-          <div>
-            <ol class="di-steg">
-              <li><b>Workshop 1 · Kartlegging</b> Dansere, foreldre og trenere i samme rom. De delte erfaringer og skisserte selv hvordan en bedre løsning skulle fungere.</li>
-              <li><b>Workshop 2 · Prototypetesting</b> En tidlig prototype ble testet med ekte brukere. Tilbakemeldingene avgjorde hvilke funksjoner som trengtes – og hvilke som ikke gjorde det.</li>
-              <li><b>Workshop 3 · Ferdig produkt</b> Hele løsningen ble testet for å bekrefte at den løste problemene vi startet med.</li>
-            </ol>
-            <p class="di-funn"><b>Viktigste funn:</b> Prototypen hadde bare dansere og administratorer – men det er ofte foreldrene som booker for barna sine. Derfor fikk foreldre en egen brukerrolle i appen.</p>
-          </div>
-          <figure class="di-skjerm">
-            <img src="bilder/danceitude/velg-rolle.jpg" alt="Registrering i Danceitude: «Hvem er du?» med valgene Danser, Forelder og Trener" loading="lazy">
-            <figcaption>Resultatet: tre roller ved registrering – danser, forelder og trener.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- 4. Designprosessen -->
-      <section class="di-del">
-        <h4>Designprosessen</h4>
-        <p class="di-lead">Fra prototype i Adobe XD til ferdig app – formet av tilbakemeldingene fra workshopene.</p>
-        <div class="di-for-etter">
-          <figure class="di-xd">
-            <div class="di-xd-rad">
-              <img src="bilder/xd-12_Bestill_privattime.png" alt="Prototype: bestill privattime – velg instruktør" loading="lazy">
-              <img src="bilder/xd-13_Kalender.png" alt="Prototype: velg dato i kalender" loading="lazy">
-              <img src="bilder/xd-16_Velg_dans.png" alt="Prototype: velg dansestil" loading="lazy">
-              <img src="bilder/xd-19_Takk.png" alt="Prototype: bekreftelse på bestilling" loading="lazy">
-            </div>
-            <figcaption><b>Prototype i Adobe XD</b> 23 skjermer i fire flyter: innlogging, bestilling, administrasjon av tider og avbestilling.</figcaption>
-          </figure>
-          <span class="di-pil" aria-hidden="true">→</span>
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude/booking-tider.jpg" alt="Ferdig app: ukevisning med ledige og opptatte tider og knappen Gå videre" loading="lazy"></div>
-            <figcaption><b>Ferdig app</b> Alle tider for uken på én skjerm – ledige og opptatte tider er tydelig skilt.</figcaption>
-          </figure>
-        </div>
-        <ul class="di-beslutninger">
-          <li><b>Egne flater per rolle.</b> Dansere, foreldre og trenere ser bare det som er relevant for dem.</li>
-          <li><b>Tydelige statuser.</b> Ledige og opptatte tider er lett å skille, så dobbeltbookinger unngås.</li>
-          <li><b>Mindre administrasjon.</b> Trenere legger ut tider selv, og danserne booker direkte.</li>
-        </ul>
-      </section>
-
-      <!-- 5. Løsningen -->
-      <section class="di-del">
-        <h4>Løsningen</h4>
-        <p class="di-lead">Én app med egne flater for dansere, foreldre og trenere: booking og avbestilling, push-varsler når timer legges ut eller bookes, og oppfølging av utviklingen over sesongen.</p>
-        <div class="di-galleri">
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude/danser-forside.jpg" alt="Danserens forside med neste konkurranse og knapp for å booke time" loading="lazy"></div>
-            <figcaption>Danser: neste konkurranse og egne timer</figcaption>
-          </figure>
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude/legg-ut-tider.jpg" alt="Treneren legger ut ledige tider i en kalender" loading="lazy"></div>
-            <figcaption>Trener: legg ut ledige tider</figcaption>
-          </figure>
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude-app.jpg" alt="Trenerens oversikt over bookede timer med mulighet til å avbestille" loading="lazy"></div>
-            <figcaption>Trener: bookinger og avbestilling</figcaption>
-          </figure>
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude/poeng-og-nivaer.jpg" alt="Poeng og nivåer i freestyle og slow" loading="lazy"></div>
-            <figcaption>Poeng og nivåer</figcaption>
-          </figure>
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude/sesongmal.jpg" alt="Mine sesongmål, med valg om å dele målene med treneren" loading="lazy"></div>
-            <figcaption>Sesongmål som kan deles med trener</figcaption>
-          </figure>
-          <figure class="di-telefon ">
-            <div class="di-ramme"><img src="bilder/danceitude/konkurranseresultater.jpg" alt="Oversikt over konkurranseresultater med plasseringer" loading="lazy"></div>
-            <figcaption>Konkurranseresultater</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- 6. Utvikling med AI -->
-      <section class="di-del di-to-kol di-ai">
-        <h4>Utvikling med AI</h4>
-        <p>Jeg utviklet appen selv, fra prototype til fungerende produkt, med AI-verktøy som Claude Code. Det gjorde det mulig å gå raskt fra innsikt til noe brukerne kunne teste, og å forbedre appen etter tilbakemeldingene. Appen finnes som iOS-app i App Store og i nettleseren.</p>
-      </section>
-
-      <!-- 7. Resultat og læring -->
-      <section class="di-del di-resultat">
-        <h4>Resultat og læring</h4>
-        <div class="di-to-kol">
-          <ul class="di-resultatliste">
-            <li><b>Lansert</b> i App Store og i nettleseren</li>
-            <li><b>3</b> danseklubber bruker appen</li>
-            <li><b>200</b> brukere</li>
-          </ul>
-          <div>
-            <p>Å teste tidlig med alle brukergruppene sparte meg for å bygge feil ting. Uten workshop 2 hadde foreldrene – de som ofte booker og betaler – ikke hatt en plass i appen.</p>
-            <p>Appen videreutvikles fortsatt sammen med dansere, foreldre og trenere. De beste løsningene blir ikke laget for brukerne, men sammen med dem.</p>
-          </div>
-        </div>
-      </section>
-    </article>
-
-    <!-- Masteroppgave -->
-    <article class="case-bred">
-      <div class="case-bred-topp">
-        <h3>En digital leksemodul – designet sammen med barn, foreldre og lærere</h3>
-        <p class="case-ingress">Masteroppgave i Applied Computer Science, spesialisering i interaksjonsdesign, ved Høgskolen i Østfold (2025). Skoleplattformen Strigoo var case. Karakter: A.</p>
       </div>
-      <figure class="case-bilde master">
-        <img src="bilder/master-skisse-til-prototype.jpg" alt="Til venstre en barnetegnet skisse av elevens forside, til høyre den ferdige high-fidelity-prototypen i Strigoo med timeplan, ukens lekser og lekseprogresjon" loading="lazy">
-        <figcaption>Fra en elevs skisse i workshop til high-fidelity-prototype av elevens forside.</figcaption>
-      </figure>
-      <div class="workshop-galleri">
-        <figure>
-          <img src="bilder/workshop-postit.jpg" alt="Post-it-lapper med barnas tanker om lekser henger på en vegg i dansesalen" loading="lazy">
-          <figcaption><b>Workshop 1</b> Erfaringer og ønsker på post-its</figcaption>
-        </figure>
-        <figure>
-          <img src="bilder/workshop-skissering.jpg" alt="Deltakere sett ovenfra skisserer skjermbilder på papirmaler rundt et bord med iPader" loading="lazy">
-          <figcaption><b>Workshop 2</b> Skisser og low-fidelity-prototyper</figcaption>
-        </figure>
-        <figure>
-          <img src="bilder/workshop-test.jpg" alt="En finger peker på high-fidelity-prototypen på en iPad, mens deltakerne gir tilbakemelding rundt bordet" loading="lazy">
-          <figcaption><b>Workshop 3</b> Testing av high-fidelity-prototypen</figcaption>
-        </figure>
-      </div>
-      <div class="case-kolonner">
-        <dl>
-          <dt>Utfordring</dt>
-          <dd>Eksisterende lekseverktøy oppleves som tungvinte, kjedelige og lite samarbeidsvennlige. Hvordan designer man en leksemodul som møter behovene til både barn, foreldre og lærere?</dd>
-          <dt>Metode</dt>
-          <dd>Tre participatory design-workshops med historiefortelling, skissering, rollespill og prototyping (Tell-Make-Enact). Tematisk analyse, samarbeidsanalyse og brukertesting på iPad, PC og mobil.</dd>
-        </dl>
-        <dl>
-          <dt>Innsikt</dt>
-          <dd>Tre hovedtemaer: enkel navigasjon og struktur, engasjerende og motiverende opplevelser, og tydeligere kommunikasjon mellom skole og hjem. Med riktig tilrettelegging ga barna svært praktiske innspill.</dd>
-          <dt>Samarbeid</dt>
-          <dd>Utført med Strigoo som case og i tett dialog med veileder. Barn, foreldre og lærere var med som likeverdige designpartnere gjennom alle tre workshopene.</dd>
-          <dt>Leveranse</dt>
-          <dd>Low- og high-fidelity-prototyper i Adobe XD for elev, forelder og lærer, og retningslinjer for å involvere barn i designprosesser.</dd>
-          <dt>Hva jeg lærte</dt>
-          <dd>Jeg forventet kreative ideer fra barna og praktiske innspill fra de voksne. Med gode verktøy og tilrettelegging ga barna de mest konkrete innspillene. Neste gang vil jeg få foreldre og lærere mer fysisk med i workshopene.</dd>
-        </dl>
-      </div>
-    </article>
-
-    <!-- MyTalent -->
-    <article class="case-bred mytalent-case">
-      <div class="case-bred-topp">
-        <h3>MyTalent – brukeropplevelsen i en digital talentplattform</h3>
-        <p class="case-ingress">En talentplattform på mobil og web. Jeg ledet designteamet fram mot lansering og i videreutviklingen (2025–2026).</p>
-      </div>
-      <div class="mytalent-rutenett">
-        <figure class="mt-flis mt-mockup">
-          <img class="mt-logo" src="bilder/mytalent-logo.png" alt="MyTalent – Build your audience. Get discovered. Earn rewards." loading="lazy">
-          <img class="mt-enheter" src="bilder/mytalent-mockup.jpg" alt="MyTalent på PC og mobil: utforsk-siden med kategorier, trending talenter og grupper" loading="lazy">
-        </figure>
-        <figure class="mt-flis mt-explore">
-          <img src="bilder/mytalent-explore.jpg" alt="Skjermbilde av MyTalent på mobil: «Get discovered for your talent» med søk, faner og knapp for å opprette konto" loading="lazy">
-        </figure>
-        <figure class="mt-flis mt-hand">
-          <img src="bilder/mytalent-hand.webp" alt="En hånd holder en mobil med MyTalent-feeden åpen" loading="lazy">
-        </figure>
-        <figure class="mt-flis mt-foto">
-          <img src="bilder/mytalent.jpg" alt="Mie Marielle sammen med en profil under innholdsproduksjon for MyTalent" loading="lazy">
-        </figure>
-      </div>
-      <div class="case-kolonner">
-        <dl>
-          <dt>Interaksjon</dt>
-          <dd>Som Interaction Specialist jobbet jeg med brukerreiser, informasjonsarkitektur, navigasjon, onboarding og microcopy – designet og prototypet i Figma.</dd>
-          <dt>Testing</dt>
-          <dd>Som ansvarlig for brukertesting planla og gjennomførte jeg testene, analyserte tilbakemeldingene og gjorde funnene om til konkrete forbedringsforslag.</dd>
-        </dl>
-        <dl>
-          <dt>Team og ledelse</dt>
-          <dd>Som Delivery Manager ledet jeg designteamet, fordelte oppgaver og fulgte opp leveranser. Jeg var bindeleddet mellom designerne og ledelsen: oversatte behov og tilbakemeldinger til konkrete designoppgaver, og sørget for felles forståelse av retning og prioriteringer.</dd>
-          <dt>Hva jeg lærte</dt>
-          <dd>Små detaljer – en knappetekst, et tomt skjermbilde, et steg i onboardingen – avgjør ofte om folk kommer i gang. Og funn fra brukertester får mest effekt når de deles tidlig og konkret med hele teamet.</dd>
-        </dl>
-      </div>
-    </article>
-
-    <!-- SkyeTec påmelding -->
-    <article class="case">
-      <div class="case-bilde skyetec">
-        <img src="bilder/skyetec-pamelding.jpg" alt="Påmeldingsside for SkyeTecs frokostseminar «AI-agenter som skaper forretningsverdi»" loading="lazy">
-      </div>
-          <div class="case-tekst">
-        <h3>SkyeTec – påmelding til frokostseminar</h3>
-        <p class="case-ingress">En egen registreringsside for SkyeTecs arrangementer, koblet til «Registrer deg» på skyetec.ai.</p>
-        <dl>
-          <dt>Flyt</dt>
-          <dd>Et kort skjema med bare de feltene som trengs, tydelige etiketter og hjelpetekst. Deltakeren får bekreftelse direkte på siden og en e-post med kalenderinvitasjon, så neste steg alltid er klart.</dd>
-          <dt>To brukere</dt>
-          <dd>Deltakeren skal melde seg på raskt fra mobil eller PC. Arrangøren trenger en enkel deltakerliste med eksport. Begge flytene er designet, og nye arrangementer kan legges inn uten ny side.</dd>
-        </dl>
-      </div>
-    </article>
-
-    <!-- Prosjekt 5 og arbeidsmåte -->
-    <div class="case-par">
-      <article class="kort">
-        <h3>Delt planleggingskalender</h3>
-        <p>Et internt verktøy for SkyeTec, designet og bygget med Claude Code, der teamet planlegger publiseringer sammen. Hvert innlegg følger en tydelig statusflyt, og hva du kan gjøre avhenger av rollen din – lesere ser, redaktører endrer, administratorer styrer tilganger.</p>
-        <div class="status-rad" aria-hidden="true">
-          <span>Idé</span><span>Klar</span><span>Godkjent</span><span>Postet</span>
-        </div>
-        <p class="liten">Kalender- og listevisning · filtrering · rollebaserte rettigheter · innlogging med Microsoft</p>
-      </article>
-
-      <article class="kort verktoy">
-        <h3>Den doble diamanten – i team og korte sløyfer</h3>
-        <ol class="prosess">
-          <li><b>Oppdage</b> Brukerinnsikt gjennom intervjuer, workshops, observasjon og data – sammen med fagfolk og interessenter.</li>
-          <li><b>Definere</b> Tematisk analyse, brukerreiser og informasjonsarkitektur. Hva er egentlig problemet, og hva er viktigst?</li>
-          <li><b>Utvikle</b> Skisser, low-fidelity og klikkbare prototyper i Figma og Adobe XD – og kodebaserte prototyper med KI når det går raskere.</li>
-          <li><b>Levere</b> Brukertesting, justering og oppfølging helt ut i produktet. Så måler vi, lærer og tar en ny runde (lean UX).</li>
-          <li><b>Hele veien</b> Deler arbeid tidlig med utviklere, produktledere og fagfolk, ber om innspill og tar beslutningene sammen.</li>
-        </ol>
-      </article>
     </div>
   </section>
 
   <section id="kompetanse" class="kompetanse">
     <h2 class="seksjon-tittel">Jeg designer. Tester. Bygger</h2>
-    <div class="kompetanse-rutenett">
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">01</span>
-        <h3>Brukerinnsikt og research</h3>
-        <p>Planlegger og gjennomfører workshops, intervjuer og observasjon, og analyserer funnene systematisk – med alt fra barneskoleelever til trenere og ledere.</p>
-        <p class="bevis">Masteroppgaven · Danceitude · MyTalent</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">02</span>
-        <h3>UX-design og prototyping</h3>
-        <p>Brukerreiser, informasjonsarkitektur, navigasjon og microcopy. Fra papirskisser og wireframes til klikkbare prototyper i Figma og Adobe XD.</p>
-        <p class="bevis">Danceitude · MyTalent · Masteroppgaven</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">03</span>
-        <h3>Brukertesting og evaluering</h3>
-        <p>Planlegger og gjennomfører brukertester på ekte enheter, evaluerer løsninger og gjør funnene om til konkrete forbedringer teamet kan ta i bruk.</p>
-        <p class="bevis">MyTalent · Danceitude · Masteroppgaven</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">04</span>
-        <h3>Universell utforming</h3>
-        <p>Tydelige etiketter, god kontrast, logisk rekkefølge og støtte for tastatur og skjermleser er en del av designet fra start – ikke noe som legges på til slutt.</p>
-        <p class="bevis">Denne siden · SkyeTec-påmelding · Danceitude</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">05</span>
-        <h3>Produktutvikling</h3>
-        <p>Tar en idé hele veien til et produkt i bruk: konsept, prioritering, lansering i App Store og videreutvikling basert på tilbakemeldinger fra brukerne.</p>
-        <p class="bevis">Danceitude · Planleggingskalender</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">06</span>
-        <h3>AI-assistert utvikling</h3>
-        <p>Bruker AI-verktøy som Claude Code til å utforske ideer, lage kodebaserte prototyper og utvikle fungerende apper og interne verktøy.</p>
-        <p class="bevis">Danceitude · Planleggingskalender · Denne siden</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">07</span>
-        <h3>Samarbeid og designledelse</h3>
-        <p>Mye erfaring med å jobbe tett med utviklere, designere, ledere, fagmiljøer og partnere. Deler arbeid underveis, ber om innspill og finner løsninger sammen. Leder marked og design i SkyeTec og har ledet designteamet i MyTalent.</p>
-        <p class="bevis">SkyeTec · MyTalent · Masteroppgaven</p>
-      </div>
-      <div class="kompetanse-kort">
-        <span class="kompetanse-nr">08</span>
-        <h3>Fra kompleksitet til enkelhet</h3>
-        <p>Gjør rotete hverdagsprosesser – dokumenter, meldingstråder og manuelle rutiner – om til enkle, sammenhengende tjenester for flere brukergrupper samtidig.</p>
-        <p class="bevis">Danceitude · Masteroppgaven · SkyeTec-påmelding</p>
-      </div>
-    </div>
+    <ol class="kompetanse-liste">
+      <li><span>01</span><div><h3>Brukerinnsikt og research</h3><p>Workshops, intervjuer og observasjon – og systematisk analyse av funnene.</p></div></li>
+      <li><span>02</span><div><h3>UX-design og prototyping</h3><p>Brukerreiser, informasjonsarkitektur og microcopy, fra skisse til prototype i Figma og Adobe XD.</p></div></li>
+      <li><span>03</span><div><h3>Brukertesting og evaluering</h3><p>Tester på ekte enheter og gjør funnene om til konkrete forbedringer.</p></div></li>
+      <li><span>04</span><div><h3>Universell utforming</h3><p>Kontrast, tydelige etiketter og støtte for tastatur og skjermleser fra start.</p></div></li>
+      <li><span>05</span><div><h3>Produktutvikling</h3><p>Fra idé og prioritering til lansering i App Store og videreutvikling.</p></div></li>
+      <li><span>06</span><div><h3>AI-assistert utvikling</h3><p>Claude Code til kodebaserte prototyper og fungerende apper.</p></div></li>
+      <li><span>07</span><div><h3>Samarbeid og designledelse</h3><p>Tett på utviklere, designere og ledere. Har ledet designteam.</p></div></li>
+      <li><span>08</span><div><h3>Fra kompleksitet til enkelhet</h3><p>Gjør rotete hverdagsprosesser om til enkle tjenester.</p></div></li>
+    </ol>
   </section>
 
   <section id="om" class="om">
@@ -398,34 +127,27 @@
     </div>
   </section>
 
-  <section id="erfaring" class="utdanning erfaring">
-    <h2 class="seksjon-tittel">Erfaring</h2>
-    <ol class="tidslinje">
-      <li><span class="aar">2023 –</span><div>
-        <h3>Head of Marketing &amp; Design · Interaction Specialist · SkyeTec</h3>
-        <p>Leder markeds- og designarbeidet og rapporterer til kommersiell direktør. Ansvar for markedsplaner og årshjul, merkevare og visuell profil, nettsidens struktur, navigasjon og brukeropplevelse, kampanjer, seminarer og arrangementer. Har utviklet og lansert SkyeTec Talks Podcast, designet logo og videreutviklet profilen, og laget interne verktøy med Claude Code. Samarbeider tett med ledelsen, fagmiljøet og partnernes markedsansvarlige.</p>
-      </div></li>
-      <li><span class="aar">2025 – 2026</span><div>
-        <h3>Delivery Manager &amp; Interaction Specialist · MyTalent</h3>
-        <p>Ledet designteamet og var bindeledd mellom designerne og ledelsen. Ansvarlig for brukertesting, og jobbet med brukerreiser, informasjonsarkitektur, navigasjon, onboarding og microcopy i Figma. Hadde også ansvar for markedsføring og innhold fram mot lansering.</p>
-      </div></li>
-      <li><span class="aar">2026 –</span><div>
-        <h3>Gründer, designer og utvikler · Danceitude</h3>
-        <p>Har laget bookingappen alene fra idé til App Store, og driver og videreutvikler den i dag. 200 brukere fordelt på to danseklubber.</p>
-      </div></li>
-    </ol>
-  </section>
-
-  <section id="utdanning" class="utdanning">
-    <h2 class="seksjon-tittel">Utdanning</h2>
-    <ol class="tidslinje">
-      <li><span class="aar">2026</span><div><h3>Microsoft Copilot</h3><p>Høgskolen i Østfold · KI-assistenter og agenter i Microsoft 365 · ansvarlig bruk av KI</p></div></li>
-      <li><span class="aar">aug.–des. 2025</span><div><h3>Generativ kunstig intelligens for kreative bransjer</h3><p>Høgskolen i Østfold · KI i design, kommunikasjon og innholdsproduksjon</p></div></li>
-      <li><span class="aar">2023–2025</span><div><h3>Master i Applied Computer Science</h3><p>Høgskolen i Østfold · spesialisering i interaksjonsdesign · karakter A</p></div></li>
-      <li><span class="aar">aug.–des. 2024</span><div><h3>Generativ kunstig intelligens</h3><p>Høgskolen i Østfold · forståelse og bruk av KI-verktøy</p></div></li>
-      <li><span class="aar">2021–2023</span><div><h3>Bachelor i digitale medier og design</h3><p>Høgskolen i Østfold · fordypning i kommunikasjon · karakter A på bacheloroppgaven</p></div></li>
-      <li><span class="aar">2020–2021</span><div><h3>Årsstudium i informasjonssystemer</h3><p>Høgskolen i Østfold · brukervennlighet, webutvikling og digitale systemer</p></div></li>
-    </ol>
+  <section id="erfaring" class="erfaring-utdanning">
+    <h2 class="seksjon-tittel">Erfaring og utdanning</h2>
+    <div class="eu-kolonner">
+      <div>
+        <h3 class="eu-tittel">Erfaring</h3>
+        <ol class="eu-liste">
+          <li><span class="aar">2023 –</span><div><h4>Head of Marketing &amp; Design · Interaction Specialist</h4><p>SkyeTec · leder markeds- og designarbeidet, nettsidens struktur og brukeropplevelse, merkevare og interne verktøy</p></div></li>
+          <li><span class="aar">2025 – 2026</span><div><h4>Delivery Manager &amp; Interaction Specialist</h4><p>MyTalent · ledet designteamet, ansvarlig for brukertesting og interaksjonsdesign i Figma</p></div></li>
+          <li><span class="aar">2026 –</span><div><h4>Gründer, designer og utvikler</h4><p>Danceitude · bookingapp i App Store, 200 brukere i tre danseklubber</p></div></li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="eu-tittel">Utdanning</h3>
+        <ol class="eu-liste">
+          <li><span class="aar">2023 – 2025</span><div><h4>Master i Applied Computer Science</h4><p>Høgskolen i Østfold · interaksjonsdesign · karakter A</p></div></li>
+          <li><span class="aar">2021 – 2023</span><div><h4>Bachelor i digitale medier og design</h4><p>Høgskolen i Østfold · kommunikasjon · A på bacheloroppgaven</p></div></li>
+          <li><span class="aar">2020 – 2021</span><div><h4>Årsstudium i informasjonssystemer</h4><p>Høgskolen i Østfold</p></div></li>
+          <li><span class="aar">2024 – 2026</span><div><h4>Videreutdanning i KI</h4><p>Høgskolen i Østfold · generativ KI (2024) · generativ KI for kreative bransjer (2025) · Microsoft Copilot (2026)</p></div></li>
+        </ol>
+      </div>
+    </div>
   </section>
 
   <section id="kontakt" class="kontakt">
@@ -446,7 +168,7 @@
   <span>miemarielle design</span>
 </footer>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=10"></script>
 
 </body>
 </html>
