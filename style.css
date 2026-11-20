@@ -346,6 +346,66 @@ section { scroll-margin-top: 5rem; }
 .retningslinjer { margin: 1.5rem 0 0 1.1rem; display: grid; gap: .35rem; font-size: .94rem; color: var(--dempet); }
 .retningslinjer li::marker { color: var(--lilla); font-weight: 600; }
 
+/* ---------- UX-caser: felles byggeklosser ---------- */
+.prosjektinfo { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--linje); border: 1px solid var(--linje); border-radius: 18px; overflow: hidden; margin: 0 0 clamp(2.5rem, 5vw, 3.5rem); }
+.prosjektinfo > div { background: var(--bg); padding: 1.1rem 1.25rem; }
+.prosjektinfo dt { font-size: .74rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--lilla); margin-bottom: .35rem; }
+.prosjektinfo dd { font-size: .93rem; color: var(--tekst); line-height: 1.5; }
+
+.rolle-liste { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem clamp(2rem, 5vw, 4rem); }
+.rolle-liste li { font-size: .97rem; color: var(--dempet); padding-left: 1rem; border-left: 2px solid var(--lilla-lys); }
+.rolle-liste b { display: block; color: var(--tekst); font-weight: 600; margin-bottom: .15rem; }
+
+.prosess-rad { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.prosess-rad li { background: var(--bg-myk); border-radius: 16px; padding: 1.2rem 1.25rem; font-size: .92rem; color: var(--dempet); }
+.prosess-rad span { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--lilla); color: #fff; font-size: .78rem; font-weight: 600; margin-bottom: .7rem; }
+.prosess-rad b { display: block; color: var(--tekst); font-weight: 600; margin-bottom: .25rem; }
+.di-xd-galleri { grid-template-columns: repeat(4, 1fr); background: var(--bg-myk); border-radius: var(--radius); padding: 1.25rem; }
+.di-xd-galleri img { height: auto !important; border-radius: 12px; background: #fff; box-shadow: 0 6px 18px rgba(29,27,38,.06); }
+
+/* Problem → funn → løsning (MyTalent) */
+.pfl { padding: 1.75rem 0; border-top: 1px dashed var(--linje); }
+.pfl:first-of-type { border-top: 0; padding-top: 0; }
+.pfl h5 { font-size: 1.1rem; margin-bottom: 1rem; }
+.pfl-rad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; position: relative; }
+.pfl-steg { position: relative; background: var(--bg-myk); border-radius: 16px; padding: 1.1rem 1.2rem; font-size: .93rem; color: #3a3746; }
+.pfl-steg:not(:last-child)::after { content: "→"; position: absolute; right: -1.6rem; top: 50%; transform: translateY(-50%); color: var(--lilla-lys); font-size: 1.2rem; }
+.pfl-losning { background: var(--lilla-bg); }
+.pfl-merke { display: block; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--lilla-mork); margin-bottom: .4rem; }
+.pfl-bilder { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.2rem; align-items: start; }
+.pfl-bilder-en { grid-template-columns: minmax(0, 520px); }
+.pfl-bilder figure { margin: 0; background: #fff; border: 1px solid var(--linje); border-radius: 14px; padding: .9rem; }
+.pfl-bilder img { width: 100%; border-radius: 8px; }
+.pfl-bilder figcaption { font-size: .8rem; color: var(--svak); margin-top: .5rem; }
+.pfl-svar { margin-top: 1.5rem; background: var(--lilla-bg); border-radius: 16px; padding: 1.2rem 1.4rem; font-size: .95rem; color: #3a3746; }
+.pfl-svar b { color: var(--lilla-mork); }
+
+/* Før og etter (Danceitude) */
+.foer-etter { display: grid; grid-template-columns: 1.2fr .9fr .9fr; gap: clamp(1rem, 3vw, 2rem); align-items: start; padding: 2rem 0; border-top: 1px dashed var(--linje); }
+.foer-etter:first-of-type { border-top: 0; padding-top: 0; }
+.fe-uten-foer { grid-template-columns: 1.2fr .9fr .9fr; }
+.fe-tekst h5 { font-size: 1.1rem; margin-bottom: .8rem; }
+.fe-tekst p { font-size: .94rem; color: var(--dempet); margin-bottom: .7rem; }
+.fe-tekst b { color: var(--tekst); font-weight: 600; }
+.fe-bilde { margin: 0; background: var(--bg-myk); border-radius: 18px; padding: .9rem; }
+.fe-bilde img { width: 100%; border-radius: 12px; box-shadow: 0 6px 18px rgba(29,27,38,.07); background: #fff; }
+.fe-telefon img { border-radius: 18px; }
+.fe-bilde figcaption { font-size: .82rem; color: var(--dempet); margin-top: .6rem; text-align: center; }
+.inkluderende { background: var(--lilla-bg); border-radius: 18px; padding: 1.4rem 1.6rem; margin-top: 1rem; }
+.inkluderende h5 { font-size: 1.05rem; margin-bottom: .7rem; }
+.inkluderende ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 2rem; }
+.inkluderende li { font-size: .93rem; color: #3a3746; padding-left: 1.1rem; position: relative; }
+.inkluderende li::before { content: "✓"; position: absolute; left: 0; color: var(--lilla-mork); font-weight: 600; }
+
+/* Resultatbilder (MyTalent) */
+.resultat-bilder { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: auto auto; gap: 1rem; }
+.resultat-bilder figure { margin: 0; border-radius: var(--radius); overflow: hidden; }
+.rb-bred { grid-row: 1 / 3; background: #000; display: flex; align-items: center; }
+.rb-bred img { width: 100%; }
+.rb-lys { background: var(--blaa-bg); display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.rb-lys img { width: 100%; max-height: 340px; object-fit: contain; }
+.mt-sticker-liten { max-width: 420px; margin: 2.5rem auto 0; }
+
 /* MyTalent */
 .mt-intro { background: var(--blaa-bg); border-radius: 24px; padding: 1.75rem 1.75rem 0; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; overflow: hidden; }
 .mt-intro .mt-logo { width: 170px; height: auto; align-self: flex-start; }
@@ -386,6 +446,16 @@ section { scroll-margin-top: 5rem; }
   .di-pil { transform: rotate(90deg); justify-self: center; }
   .di-for-etter .di-telefon { justify-self: center; }
   .di-beslutninger, .di-roller, .funn-liste { grid-template-columns: 1fr; }
+  .prosjektinfo { grid-template-columns: 1fr 1fr; }
+  .rolle-liste, .inkluderende ul { grid-template-columns: 1fr; }
+  .prosess-rad, .di-xd-galleri { grid-template-columns: 1fr 1fr; }
+  .pfl-rad { grid-template-columns: 1fr; gap: 1.6rem; }
+  .pfl-steg:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -1.45rem; transform: translateX(-50%); }
+  .pfl-bilder { grid-template-columns: 1fr; }
+  .foer-etter, .fe-uten-foer { grid-template-columns: 1fr 1fr; }
+  .fe-tekst { grid-column: 1 / -1; }
+  .resultat-bilder { grid-template-columns: 1fr; }
+  .rb-bred { grid-row: auto; }
   .beslutninger td:first-child { width: 40%; }
   .di-stack li { grid-template-columns: 1fr; gap: 0; }
   .di-galleri { grid-auto-columns: 62vw; }
