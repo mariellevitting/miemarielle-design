@@ -212,7 +212,7 @@ section { scroll-margin-top: 5rem; }
 .kontakt-epost a { color: var(--dempet); text-decoration: none; border-bottom: 1px solid var(--lilla-lys); }
 .kontakt-epost a:hover { color: var(--tekst); }
 
-.bunn { border-top: 1px solid var(--linje); background: var(--bg-myk); margin-top: 2rem; }
+.bunn { border-top: 1px solid var(--linje); background: var(--bg-myk); margin-top: clamp(4rem, 8vw, 6rem); }
 .bunn-innhold {
   max-width: var(--bredde); margin: 0 auto; padding: clamp(2.5rem, 5vw, 3.5rem) var(--kant) 2rem;
   display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 2rem;
@@ -384,6 +384,7 @@ section { scroll-margin-top: 5rem; }
 .foer-etter { display: grid; grid-template-columns: 1.2fr .9fr .9fr; gap: clamp(1rem, 3vw, 2rem); align-items: start; padding: 2rem 0; border-top: 1px dashed var(--linje); }
 .foer-etter:first-of-type { border-top: 0; padding-top: 0; }
 .fe-uten-foer { grid-template-columns: 1.2fr .9fr .9fr; }
+.fe-bare-tekst { grid-template-columns: minmax(0, 720px); }
 .fe-tekst h5 { font-size: 1.1rem; margin-bottom: .8rem; }
 .fe-tekst p { font-size: .94rem; color: var(--dempet); margin-bottom: .7rem; }
 .fe-tekst b { color: var(--tekst); font-weight: 600; }
