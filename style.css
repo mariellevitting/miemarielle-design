@@ -211,10 +211,25 @@ section { scroll-margin-top: 5rem; }
 .kontakt-epost a { color: var(--dempet); text-decoration: none; border-bottom: 1px solid var(--lilla-lys); }
 .kontakt-epost a:hover { color: var(--tekst); }
 
-footer {
-  max-width: var(--bredde); margin: 0 auto; display: flex; justify-content: space-between;
-  padding: 1.5rem var(--kant) 2.5rem; font-size: .84rem; color: var(--svak);
+.bunn { border-top: 1px solid var(--linje); background: var(--bg-myk); margin-top: 2rem; }
+.bunn-innhold {
+  max-width: var(--bredde); margin: 0 auto; padding: clamp(2.5rem, 5vw, 3.5rem) var(--kant) 2rem;
+  display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 2rem;
 }
+.bunn-logo img { height: 36px; width: auto; }
+.bunn-merke p { margin-top: .9rem; max-width: 320px; font-size: .92rem; color: var(--dempet); }
+.bunn-kolonne { display: flex; flex-direction: column; gap: .55rem; }
+.bunn-kolonne h2 { font-size: .75rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--lilla); margin-bottom: .3rem; }
+.bunn-kolonne a { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--tekst); font-size: .94rem; width: fit-content; }
+.bunn-kolonne a:hover { color: var(--lilla-mork); }
+.bunn-kolonne svg { width: 18px; height: 18px; color: var(--lilla); flex-shrink: 0; }
+.bunn-linje {
+  max-width: var(--bredde); margin: 0 auto; padding: 1.2rem var(--kant) 2rem;
+  display: flex; justify-content: space-between; gap: 1rem; font-size: .82rem; color: var(--svak);
+  border-top: 1px solid var(--linje);
+}
+.til-toppen { color: var(--dempet); text-decoration: none; }
+.til-toppen:hover { color: var(--lilla-mork); }
 
 /* ==========================================================
    Casesider
@@ -377,7 +392,7 @@ footer {
   .workshop-galleri img { height: auto; aspect-ratio: 4 / 3; }
   .eu-liste li { grid-template-columns: 1fr; gap: .15rem; }
   nav a:not(:last-child) { display: none; }
-  footer { flex-direction: column; gap: .3rem; }
+  .bunn-innhold { grid-template-columns: 1fr; gap: 1.8rem; }
 }
 @media (max-width: 900px) {
   .logo img { height: 32px; }
