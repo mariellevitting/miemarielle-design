@@ -40,9 +40,9 @@ h1, h2, h3, h4, h5 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.1
   transition: background .3s, padding .3s, box-shadow .3s;
 }
 .topp.rullet { background: rgba(255,255,255,.88); backdrop-filter: blur(14px); padding-block: .85rem; box-shadow: 0 1px 0 var(--linje); }
-.logo { display: flex; align-items: center; gap: .55rem; text-decoration: none; font-weight: 500; letter-spacing: .06em; font-size: .92rem; }
-.logo svg { width: 1.4rem; height: 1.4rem; color: var(--lilla); }
-.logo span { white-space: nowrap; }
+.logo { display: flex; align-items: center; line-height: 0; }
+.logo img { height: 40px; width: auto; transition: height .3s; }
+.topp.rullet .logo img { height: 34px; }
 nav { display: flex; gap: clamp(1rem, 2.6vw, 2rem); font-size: .94rem; }
 nav a { text-decoration: none; color: var(--dempet); transition: color .2s; }
 nav a:hover { color: var(--tekst); }
@@ -320,8 +320,9 @@ footer {
   nav a:not(:last-child) { display: none; }
   footer { flex-direction: column; gap: .3rem; }
 }
-@media (max-width: 400px) {
-  .logo span { font-size: .8rem; }
+@media (max-width: 900px) {
+  .logo img { height: 32px; }
+  .topp.rullet .logo img { height: 30px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
