@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=14">
 </head>
 <body class="caseside">
 
@@ -58,7 +58,7 @@
       <section class="di-del di-problem">
         <h4>Problemet</h4>
         <div class="di-to-kol">
-          <p>Ledige privattimer lå i et delt Google Docs-dokument, og avtaler ble gjort i meldinger på tvers av apper. Ingen hadde full oversikt, og det ble dobbeltbookinger. Trenerne brukte tid på administrasjon i stedet for trening.</p>
+          <p>Ledige privattimer lå i et delt Google Docs-dokument, og avtaler ble gjort i meldinger på tvers av apper. Ingen hadde full oversikt, og det ble dobbeltbookinger. Trenerne brukte tid på administrasjon i stedet for trening. Som interaksjonsdesigner ville jeg finne den riktige løsningen – ikke bare en ny.</p>
           <figure class="sitat">
             <blockquote>«Før måtte vi lete i Google Docs og sende meldinger for å finne ledige timer. Nå er alt i appen – det er bare å booke!»</blockquote>
             <figcaption>Forelder, Evolution Danseklubb</figcaption>
@@ -110,6 +110,35 @@
       <section class="di-del">
         <h4>Løsningen</h4>
         <p class="di-lead">Én app med egne flater for dansere, foreldre og trenere: booking og avbestilling, push-varsler når timer legges ut eller bookes, og oppfølging av utviklingen over sesongen.</p>
+        <div class="di-roller">
+          <div>
+            <h5>For dansere</h5>
+            <ul>
+              <li>Finn trenere og book privattimer med få trykk</li>
+              <li>Se kommende og gjennomførte timer</li>
+              <li>Sett sesongmål og logg konkurranseresultater</li>
+              <li>Varsel når en trener booker en time for deg</li>
+            </ul>
+          </div>
+          <div>
+            <h5>For foreldre</h5>
+            <ul>
+              <li>Book privattimer på vegne av barnet</li>
+              <li>Oversikt over barnets bookinger på ett sted</li>
+              <li>Avbestill direkte i appen</li>
+              <li>Varsel når en trener booker for barnet</li>
+            </ul>
+          </div>
+          <div>
+            <h5>For trenere</h5>
+            <ul>
+              <li>Legg ut ledige tider for én eller flere dager samtidig</li>
+              <li>Book timer direkte for dansere</li>
+              <li>Søk opp dansere og se historikk</li>
+              <li>Varsel ved nye bookinger og avbestillinger</li>
+            </ul>
+          </div>
+        </div>
         <div class="di-galleri">
           <figure class="di-telefon ">
             <div class="di-ramme"><img src="bilder/danceitude/danser-forside.jpg" alt="Danserens forside med neste konkurranse og knapp for å booke time" loading="lazy"></div>
@@ -137,9 +166,18 @@
           </figure>
         </div>
       </section>
-      <section class="di-del di-to-kol di-ai">
+      <section class="di-del di-ai">
         <h4>Utvikling med AI</h4>
-        <p>Jeg utviklet appen selv, fra prototype til fungerende produkt, med AI-verktøy som Claude Code. Det gjorde det mulig å gå raskt fra innsikt til noe brukerne kunne teste, og å forbedre appen etter tilbakemeldingene. Appen finnes som iOS-app i App Store og i nettleseren.</p>
+        <div class="di-to-kol">
+          <p>Det tekniske ble bygget fra ende til ende med Claude Code som utviklingspartner. Ved å la AI håndtere arkitektur, kodegenerering og feilsøking kunne jeg holde fullt fokus på brukeropplevelsen og produktlogikken – og gå raskt fra tilbakemelding til ny versjon.</p>
+          <ul class="di-stack">
+            <li><b>Next.js</b> Fullstack-rammeverk med server-side rendering</li>
+            <li><b>Supabase</b> Database, autentisering og tilgangsstyring per rad</li>
+            <li><b>Vercel</b> Kontinuerlig publisering med forhåndsvisninger</li>
+            <li><b>Capacitor + Xcode</b> Native iOS-app fra samme kodebase</li>
+            <li><b>Claude Code</b> AI-drevet utvikling gjennom hele prosjektet</li>
+          </ul>
+        </div>
       </section>
       <section class="di-del di-resultat">
         <h4>Resultat og læring</h4>
@@ -179,7 +217,7 @@
   <span>miemarielle design</span>
 </footer>
 
-<script src="script.js?v=13"></script>
+<script src="script.js?v=14"></script>
 
 </body>
 </html>

@@ -94,6 +94,14 @@ nav a:hover { color: var(--tekst); }
 }
 @keyframes dryss { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 
+.hero-sticker { margin: 0; justify-self: center; width: 100%; max-width: 520px; }
+.hero-sticker img {
+  width: 100%; height: auto; transform: rotate(-3deg);
+  filter: drop-shadow(0 18px 30px rgba(29,27,38,.16)) drop-shadow(0 2px 4px rgba(29,27,38,.08));
+  animation: sticker-inn .9s cubic-bezier(.2,.8,.2,1.2) both;
+}
+@keyframes sticker-inn { from { opacity: 0; transform: rotate(-9deg) scale(.85); } to { opacity: 1; transform: rotate(-3deg) scale(1); } }
+
 /* ---------- Knapper og lenker ---------- */
 .knapp {
   display: inline-flex; align-items: center; gap: .5rem;
@@ -249,13 +257,24 @@ footer {
 .di-beslutninger li { font-size: .94rem; color: var(--dempet); padding-top: 1rem; border-top: 2px solid var(--lilla-lys); }
 .di-beslutninger b { display: block; color: var(--tekst); font-weight: 500; margin-bottom: .2rem; }
 
+.di-roller { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 3vw, 2rem); margin-bottom: 2.5rem; }
+.di-roller > div { background: var(--bg-myk); border-radius: 16px; padding: 1.3rem 1.4rem; }
+.di-roller h5 { font-size: 1rem; margin-bottom: .6rem; color: var(--lilla-mork); }
+.di-roller ul { list-style: none; display: grid; gap: .45rem; }
+.di-roller li { font-size: .9rem; color: var(--dempet); padding-left: 1rem; position: relative; }
+.di-roller li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--lilla-lys); }
+.di-stack { list-style: none; display: grid; gap: .1rem; }
+.di-stack li { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; padding: .65rem 0; border-top: 1px solid var(--linje); font-size: .92rem; color: var(--dempet); }
+.di-stack li:first-child { border-top: 0; padding-top: 0; }
+.di-stack b { color: var(--tekst); font-weight: 500; }
+
 .di-galleri {
   display: grid; grid-auto-flow: column; grid-auto-columns: clamp(200px, 21vw, 240px); gap: 1.4rem;
   overflow-x: auto; padding: .5rem .25rem 1.5rem; scroll-snap-type: x mandatory; scrollbar-width: thin;
 }
 .di-galleri .di-telefon { scroll-snap-align: start; }
 
-.di-ai h4 { margin-bottom: 0; }
+
 .di-resultatliste { list-style: none; display: grid; gap: .8rem; }
 .di-resultatliste li { font-size: 1.02rem; color: var(--dempet); display: flex; align-items: baseline; gap: .8rem; }
 .di-resultatliste b { font-weight: 600; font-size: 1.4rem; color: var(--lilla); min-width: 7rem; }
@@ -307,12 +326,13 @@ footer {
 @media (max-width: 900px) {
   .hero-rutenett, .di-intro, .di-to-kol, .prosjekter, .andre-prosjekter,
   .kompetanse-liste, .eu-kolonner, .om-tekst { grid-template-columns: 1fr; }
-  .hero-enheter { display: none; }
+  .hero-sticker { max-width: 340px; margin-top: .5rem; }
   .di-stor { max-width: 270px; }
   .di-for-etter, .skisse-prototype { grid-template-columns: 1fr; }
   .di-pil { transform: rotate(90deg); justify-self: center; }
   .di-for-etter .di-telefon { justify-self: center; }
-  .di-beslutninger { grid-template-columns: 1fr; }
+  .di-beslutninger, .di-roller { grid-template-columns: 1fr; }
+  .di-stack li { grid-template-columns: 1fr; gap: 0; }
   .di-galleri { grid-auto-columns: 62vw; }
   .workshop-galleri { grid-template-columns: 1fr; }
   .workshop-galleri img { height: auto; aspect-ratio: 4 / 3; }
@@ -326,6 +346,6 @@ footer {
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .utforsk::after { animation: none; }
+  .utforsk::after, .hero-sticker img { animation: none; }
   .vis { opacity: 1; transform: none; transition: none; }
 }

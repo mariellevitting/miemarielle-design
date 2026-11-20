@@ -114,7 +114,7 @@
   const topp = document.querySelector(".topp");
   const helt = document.querySelector(".hero");
   function vedRulling() {
-    topp.classList.toggle("rullet", !helt || scrollY > helt.offsetHeight - 70);
+    topp.classList.toggle("rullet", !helt || scrollY > 40);
   }
   addEventListener("scroll", vedRulling, { passive: true });
   vedRulling();
