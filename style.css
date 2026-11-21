@@ -78,12 +78,15 @@ nav a:hover { color: var(--tekst); }
 }
 .telefon img { width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 26px; }
 .telefon-navn {
-  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+  position: absolute; left: 50%; bottom: 12px; font-size: .66rem !important; transform: translateX(-50%);
   background: rgba(255,255,255,.95); color: var(--tekst); font-size: .72rem; font-weight: 500;
   padding: .3rem .8rem; border-radius: 999px; white-space: nowrap; box-shadow: 0 2px 10px rgba(29,27,38,.1);
 }
-.telefon-bak { right: 0; top: 0; transform: rotate(5deg); }
-.telefon-foran { left: 4%; bottom: 0; transform: rotate(-4deg); }
+.telefon-bak { right: -2%; bottom: 4%; transform: rotate(6deg); width: clamp(130px, 12.5vw, 170px); z-index: 2; }
+.telefon-foran { left: -4%; bottom: 0; transform: rotate(-5deg); width: clamp(130px, 12.5vw, 170px); z-index: 2; }
+.hero-meg { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 78%; margin: 0; z-index: 1; display: flex; justify-content: center; }
+.hero-sirkel { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; aspect-ratio: 1; border-radius: 50%; background: #e9e3ff; }
+.hero-meg img { position: relative; width: 74%; height: auto; display: block; }
 
 .utforsk {
   position: absolute; left: 50%; bottom: 1.8rem; transform: translateX(-50%);
@@ -441,7 +444,11 @@ section { scroll-margin-top: 5rem; }
 @media (max-width: 900px) {
   .hero-rutenett, .di-intro, .di-to-kol, .prosjekter, .andre-prosjekter,
   .kompetanse-liste, .eu-kolonner, .om-tekst { grid-template-columns: 1fr; }
-  .hero-enheter { display: none; }
+  .hero-enheter { height: 360px; width: 100%; max-width: 360px; justify-self: center; margin-top: 1rem; }
+  .telefon-bak, .telefon-foran { width: 108px; border-radius: 22px; padding: 5px; }
+  .telefon img { border-radius: 17px; }
+  .telefon-navn { display: none; }
+  .utforsk { display: none; }
   .di-stor { max-width: 270px; }
   .di-for-etter, .skisse-prototype { grid-template-columns: 1fr; }
   .di-pil { transform: rotate(90deg); justify-self: center; }
